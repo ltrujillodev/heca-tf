@@ -58,6 +58,12 @@ header {
     transform: translateY(0px);
   }
 }
+@media (width <= 466px) {
+  .modal-body-mobile {
+    width: 384px;
+    height: 216px;
+  }
+}
 
 /* MAIN */
 #main {
