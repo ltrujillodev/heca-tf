@@ -69,3 +69,15 @@ header {
 .main-container-img-2:hover {
   transform: rotate(5deg) translateX(-25px);
 }
+
+/* FOOTER */
+@media (width <= 767px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+.footer-copy {
+  background-color: var(--oscuro);
+}
