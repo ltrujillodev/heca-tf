@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HECA :: Trabajo Final</title>
+    <title>HECA - Trabajo Final :: Inicio</title>
     <!-- BOOTSTRAP -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -23,10 +23,10 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="bg-dark">
+    <header class="px-5 shadow-lg">
       <!-- NAVEGACION -->
       <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container-fluid px-0">
           <!-- LOGO -->
           <a class="navbar-brand" href="index.html">
             <svg
@@ -67,32 +67,35 @@
             class="collapse navbar-collapse justify-content-end"
             id="navbarText"
           >
-            <!-- ENLACES DESKTOP -->
-            <ul id="nav-desktop" class="nav fw-bold justify-content-center">
+            <!-- ENLACES -->
+            <ul
+              id="nav-desktop"
+              class="nav fw-bold justify-content-center flex-sm-column flex-lg-row"
+            >
               <li class="nav-item">
                 <a
-                  class="nav-link fs-5 text-white link-primary"
+                  class="nav-link fs-5 text-white link-warning"
                   href="tecnologias.html"
                   >Tecnologías</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link fs-5 text-white link-secondary"
+                  class="nav-link fs-5 text-white link-warning"
                   href="servicios.html"
                   >Servicios</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link fs-5 text-white link-success"
+                  class="nav-link fs-5 text-white link-warning"
                   href="casos-de-uso.html"
                   >Casos de uso</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link fs-5 text-white link-danger"
+                  class="nav-link fs-5 text-white link-warning"
                   href="seguridad.html"
                   >Seguridad</a
                 >
@@ -109,6 +112,104 @@
         </div>
       </nav>
     </header>
+
+    <!-- HERO -->
+    <section id="parallax" class="hero p-5 d-flex align-items-center parallax">
+      <div class="content">
+        <h1 class="display-1 fw-bold">
+          Tecnologías y servicios <br />
+          Cloud Computing
+        </h1>
+        <p class="display-2 fw-light">
+          Una estrategia que las empresas<br />
+          deben implementar
+        </p>
+      </div>
+    </section>
+
+    <!-- MAIN -->
+    <main id="main" class="col bg-light p-5">
+      <div class="container text-center">
+        <div class="col-lg">
+          <!-- TITULO -->
+          <div class="row-lg">
+            <h2 class="display-3 fw-bold mb-5">Cloud Computing</h2>
+          </div>
+          <!-- TEXTOS -->
+          <div class="row row-sm">
+            <!-- QUE ES -->
+            <div class="col-lg-4 row-sm mb-sm-5">
+              <div class="row mb-lg-3">
+                <h3 class="display-6 fw-bold">¿Qué es?</h3>
+              </div>
+              <div class="row justify-content-center mb-lg-3">
+                <img
+                  class="main-container-img-1"
+                  src="img/main-funcion.png"
+                  style="width: 200px"
+                  alt="Imagen de ¿Qué es?"
+                />
+              </div>
+              <div class="row">
+                <p class="h5">
+                  Las empresas compran equipos que requieren un espacio físico
+                  que ofrezca suficiente potencia y refrigeración. Además,
+                  necesitan expertos que los gestionen. El cloud computing
+                  soluciona estos problemas ofreciendo recursos de computación
+                  como servicios escalables y bajo demanda.
+                </p>
+              </div>
+            </div>
+            <!-- DEFINICION -->
+            <div class="col-lg-4 row-sm mb-sm-5">
+              <div class="row mb-lg-3">
+                <h3 class="display-6 fw-bold">Definición</h3>
+              </div>
+              <div class="row justify-content-center mb-lg-3">
+                <img
+                  class="main-container-img-2"
+                  src="img/main-servicios.png"
+                  style="width: 200px"
+                  alt="Imagen de ¿Qué es?"
+                />
+              </div>
+              <div class="row">
+                <p class="h5">
+                  Cloud computing es la disponibilidad bajo demanda de recursos
+                  de computación a través de Internet. Esta tecnología evita que
+                  las empresas tengan que encargarse de aprovisionar, configurar
+                  o gestionar los recursos y permite que paguen únicamente por
+                  los que usen.
+                </p>
+              </div>
+            </div>
+            <!-- FUNCION -->
+            <div class="col-lg-4 row-sm">
+              <div class="row mb-lg-3">
+                <h3 class="display-6 fw-bold">Función</h3>
+              </div>
+              <div class="row justify-content-center mb-lg-3">
+                <img
+                  class="main-container-img-2"
+                  src="img/main-definicion.png"
+                  style="width: 200px"
+                  alt="Imagen de ¿Qué es?"
+                />
+              </div>
+              <div class="row">
+                <p class="h5">
+                  Los modelos de servicio de cloud computing se basan en el
+                  concepto de compartir recursos informáticos, software e
+                  información bajo demanda por Internet, pagando para acceder a
+                  un grupo virtual de recursos compartidos que se encuentran en
+                  servidores remotos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

@@ -11,12 +11,58 @@
   --fontmain: "Roboto", sans-serif;
 }
 
+/* GLOBALES */
 body {
   font-family: var(--fontmain);
 }
 
+header {
+  background-color: var(--oscuro);
+}
+
 /* HEADER */
-/* Mobile */
 .navbar-toggler {
   background-color: var(--blanco);
+}
+
+/* HERO */
+.parallax {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* EFECTO PARALLAX PARA EL HERO */
+#parallax {
+  /* background-image: url("/img/img-hero-1.jpg"); */
+  /* background-image: url("/img/img-hero-2.webp"); */
+  /* background-image: url("/img/img-hero-3.jpg"); */
+}
+
+/* CONTENIDO DEL PARALLAX */
+.content {
+  animation: fadeIn 2s ease-out;
+}
+
+/* ANIMACIONES PARA EL CONTENIDO */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* MAIN */
+.main-container-img-1:hover {
+  transform: rotate(5deg) translateX(25px);
+}
+.main-container-img-2:hover {
+  transform: rotate(5deg) translateX(-25px);
 }
