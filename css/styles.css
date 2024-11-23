@@ -27,7 +27,7 @@ header {
 
 /* HERO */
 .parallax {
-  height: 100vh;
+  /* height: 100vh; */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -76,6 +76,20 @@ header {
     display: flex;
     flex-direction: column;
     gap: 16px;
+  }
+}
+@media (width <= 767px) {
+  .footer-linea {
+    display: block;
+  }
+  .rrss {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (width > 767px) {
+  .footer-linea {
+    display: none;
   }
 }
 .footer-copy {

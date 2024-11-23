@@ -114,8 +114,12 @@
     </header>
 
     <!-- HERO -->
-    <section id="parallax" class="hero p-5 d-flex align-items-center parallax">
+    <section
+      id="parallax"
+      class="hero p-5 d-flex flex-column align-items-center parallax"
+    >
       <div class="content">
+        <!-- TITULOS -->
         <h1 class="display-1 fw-bold">
           Tecnologías y servicios <br />
           Cloud Computing
@@ -124,6 +128,74 @@
           Una estrategia que las empresas<br />
           deben implementar
         </p>
+        <!-- MODAL -->
+        <!-- BOTON MODAL -->
+        <button
+          type="button"
+          class="btn btn-dark fw-bold"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Ver vídeo
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <!-- MODAL HEADER -->
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  CLOUD COMPUTING
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <!-- MODAL BODY -->
+              <div class="modal-body mw-100">
+                <iframe
+                  width="426"
+                  height="240"
+                  src="https://www.youtube.com/embed/h4Af5bbFAq0"
+                  title="¿Qué es la nube (cloud computing)? - La mejor explicación en español"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <!-- MODAL FOOTER -->
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-success">
+                  <a
+                    class="nav-link text-white"
+                    href="https://www.youtube.com/watch?v=h4Af5bbFAq0&ab_channel=EDteam"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Ir</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -242,6 +314,9 @@
               <p class="mb-0">Av. Cuba 152</p>
               <p class="mb-0">Jesús María, Lima, Perú</p>
             </div>
+
+            <hr class="footer-linea border-2 border-dark mt-3" />
+
             <!-- ENLACES -->
             <div class="col row-sm d-flex flex-column justify-content-between">
               <a
@@ -270,6 +345,9 @@
                 >Contacto</a
               >
             </div>
+
+            <hr class="footer-linea border-2 border-dark mt-3" />
+
             <!-- SUSCRIPCION -->
             <div class="col row-sm d-flex flex-column">
               <p class="fw-bold mb-3">Suscribirse</p>
@@ -289,11 +367,17 @@
                 </button>
               </form>
             </div>
+
+            <hr class="footer-linea border-2 border-dark mt-3" />
+
             <!-- REDES SOCIALES -->
             <div class="col row-sm d-flex flex-column">
               <p class="fw-bold">Síguenos</p>
-              <div class="row">
-                <a class="col-sm" href="https://www.facebook.com/?locale=es_LA">
+              <div class="row rrss">
+                <a
+                  class="col col-sm"
+                  href="https://www.facebook.com/?locale=es_LA"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -310,7 +394,7 @@
                     ></path>
                   </svg>
                 </a>
-                <a class="col-sm" href="https://www.instagram.com/">
+                <a class="col col-sm" href="https://www.instagram.com/">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
