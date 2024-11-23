@@ -1,0 +1,22 @@
+/* PALETA DE COLORES PERSONALIZADA */
+:root {
+  --oscuro: #131517;
+  --blanco: #f7f9f9;
+  --amarillo: #ffc300;
+  --celeste: #aed6f1;
+  --verdeFuerte: #27ae60;
+  --verdesuave: #daf7a6;
+  --rojo: #de3f33;
+  --coral: #ff7f50;
+  --fontmain: "Roboto", sans-serif;
+}
+
+body {
+  font-family: var(--fontmain);
+}
+
+/* HEADER */
+/* Mobile */
+.navbar-toggler {
+  background-color: var(--blanco);
+}
