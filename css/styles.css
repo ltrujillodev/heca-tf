@@ -60,6 +60,9 @@ header {
 }
 
 /* MAIN */
+#main {
+  background-color: var(--oscuro);
+}
 .main-container-img-1:hover {
   transform: rotate(5deg) translateX(25px);
 }
