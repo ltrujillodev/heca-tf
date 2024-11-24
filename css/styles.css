@@ -25,6 +25,15 @@ header {
   background-color: var(--blanco);
 }
 
+@media (332px < width <= 767px) {
+  #nav-desktop {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+/* HEADER */
+
 /* HERO */
 .parallax {
   /* height: 100vh; */
@@ -64,26 +73,42 @@ header {
     height: 216px;
   }
 }
+/* HERO */
 
 /* MAIN */
 #main {
   background-color: var(--oscuro);
 }
+
 .main-container-img-1:hover {
   transform: rotate(5deg) translateX(25px);
 }
+
 .main-container-img-2:hover {
   transform: rotate(5deg) translateX(-25px);
 }
+
+@media (width <= 767px) {
+  .main-tecnologias-textos {
+    text-align: center;
+  }
+}
+
+.main-tecno-btn:hover {
+  border: none;
+  background-color: var(--amarillo);
+}
+
+/* MAIN */
 
 /* FOOTER */
 @media (width <= 767px) {
   .footer-container {
     display: flex;
     flex-direction: column;
-    gap: 16px;
   }
 }
+
 @media (width <= 767px) {
   .footer-linea {
     display: block;
@@ -93,11 +118,14 @@ header {
     flex-direction: row;
   }
 }
+
 @media (width > 767px) {
   .footer-linea {
     display: none;
   }
 }
+
 .footer-copy {
   background-color: var(--oscuro);
 }
+/* FOOTER */
