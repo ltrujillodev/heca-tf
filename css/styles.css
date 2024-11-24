@@ -31,6 +31,9 @@ header {
     flex-direction: column;
     gap: 16px;
   }
+  .card-item {
+    margin-bottom: 20px;
+  }
 }
 /* HEADER */
 
