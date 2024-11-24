@@ -76,7 +76,8 @@ header {
 /* HERO */
 
 /* MAIN */
-#main {
+#main,
+#main-contacto {
   background-color: var(--oscuro);
 }
 
