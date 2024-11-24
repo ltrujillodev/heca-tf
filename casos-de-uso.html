@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HECA - Trabajo Final :: Casos de uso</title>
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS PERSONALIZADO -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="px-5 shadow-lg">
+      <!-- NAVEGACION -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-0">
+          <!-- LOGO -->
+          <a class="navbar-brand" href="index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-cloud-code"
+              width="80"
+              height="80"
+              viewBox="0 0 24 24"
+              stroke-width="1.25"
+              stroke="#f7f9f9"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M11 18.004h-4.343c-2.572 -.004 -4.657 -2.011 -4.657 -4.487c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99a3.468 3.468 0 0 1 3.307 2.444"
+              />
+              <path d="M20 21l2 -2l-2 -2" />
+              <path d="M17 17l-2 2l2 2" />
+            </svg>
+          </a>
+          <!-- BOTON HAMBURGESA REPSONSIVE -->
+          <button
+            id="nav-boton"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- ENLACES -->
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarText"
+          >
+            <!-- ENLACES -->
+            <ul
+              id="nav-desktop"
+              class="nav fw-bold flex-md-col flex-lg-col justify-content-center align-items-center"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link fs-5 text-white link-warning"
+                  aria-current="page"
+                  href="tecnologias.html"
+                  >Tecnologías</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link fs-5 text-white link-warning"
+                  href="servicios.html"
+                  >Servicios</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active fs-5 text-white link-dark bg-warning"
+                  href="#"
+                  >Casos de uso</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link fs-5 text-white link-warning"
+                  href="seguridad.html"
+                  >Seguridad</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link fs-5 text-white link-warning"
+                  href="contacto.html#main-contacto"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/netflix.png" class="d-block w-100" alt="Netflix" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="fw-bold">Netflix</h5>
+            <p class="fw-bold">Servicio de streaming por suscripción.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/coca-cola.jpg" class="d-block w-100" alt="Coca Cola" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-dark fw-bold">Coca Cola</h5>
+            <p class="text-dark fw-bold">
+              Corporación multinacional estadounidense de bebidas.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/axa.png" class="d-block w-100" alt="AXA" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-success fw-bold">AXA</h5>
+            <p class="text-success fw-bold">
+              Empresa multinacional que ofrece servicios financieros.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/airbnb.jpg" class="d-block w-100" alt="Airbnb" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="fw-bold text-warning">Airbnb</h5>
+            <p class="fw-bold text-warning">
+              Compañía que ofrece una plataforma digital dedicada a la oferta de
+              alojamientos.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/walmart.jpg" class="d-block w-100" alt="Walmart" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="fw-bold text-dark">Walmart</h5>
+            <p class="fw-bold text-dark">
+              Corporación multinacional de tiendas de descuento y almacenes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- MAIN -->
+    <main id="main" class="col text-white p-5">
+      <div class="container mx-0 px-0">
+        <div
+          class="main-tecnologías col-sm row justify-content-center align-items-center"
+        >
+          <!-- TITULO -->
+          <div class="col">
+            <h2 class="display-1 fw-bold mb-0">Casos de uso</h2>
+          </div>
+          <!-- TEXTO 1 -->
+          <div class="row">
+            <p class="h5 px-0">
+              El Cloud computing es una tendencia tecnológica que ha cambiado la
+              forma en que las empresas almacenan, procesan y comparten
+              información. <br />
+              <br />
+              A medida que más organizaciones comienzan a adoptar soluciones en
+              la nube, surgen una serie de ejemplos de empresas que han visto
+              los beneficios de la nube en términos de eficiencia, seguridad y
+              escalabilidad. <br />
+              <br />
+              Existen innumerables empresas de diferentes tamaños y sectores que
+              han adoptado soluciones en la nube con éxito. Desde pequeñas
+              startups hasta grandes corporaciones, cada vez más empresas están
+              descubriendo los beneficios de la nube y cómo puede mejorar la
+              eficiencia y la rentabilidad de sus operaciones. <br />
+              <br />
+              En general, la adopción de soluciones Cloud Computing es un paso
+              importante para cualquier empresa que busque mejorar su eficiencia
+              y competitividad. Al subirse a la nube, las empresas pueden
+              aprovechar la escalabilidad y la flexibilidad de la tecnología, lo
+              que les permite expandirse y adaptarse rápidamente a medida que
+              cambian las necesidades del negocio.
+            </p>
+          </div>
+          <!-- ACORDION -->
+          <div class="accordion mt-3" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Netflix
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Para gestionar el gran volumen de tráfico que recibe su sitio
+                  web,
+                  <strong
+                    >Netflix ha trasladado su infraestructura a la nube</strong
+                  >, utilizando soluciones en la nube. <br />
+                  La infraestructura de la nube ha permitido a Netflix controlar
+                  de manera eficiente la escalabilidad y el volumen de tráfico
+                  de su web, mientras que al mismo tiempo ha mejorado la
+                  seguridad y la disponibilidad del servicio.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button fw-bold collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Coca Cola
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  La empresa ha podido aprovechar la escalabilidad y la
+                  flexibilidad de la nube para mejorar la eficiencia y la
+                  productividad en toda la organización, a nivel operacional y
+                  de recursos humanos. Además,
+                  <strong
+                    >la nube ha permitido a Coca-Cola acceder a datos críticos
+                    en tiempo real</strong
+                  >
+                  lo que ha mejorado la toma de decisiones y la visibilidad de
+                  la empresa.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button fw-bold collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  AXA
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  La empresa ha podido aprovechar la escalabilidad de la nube
+                  para expandir sus servicios en línea, lo que ha mejorado la
+                  eficiencia y ha reducido los costes operativos. Además,
+                  <strong
+                    >la nube ha permitido a AXA mejorar la seguridad y la
+                    posibilidad de adaptación de su infraestructura de
+                    TI</strong
+                  >, reduciendo el riesgo de interrupciones del servicio.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button fw-bold collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  Airbnb
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Para gestionar el volumen de datos que transitan su sitio web
+                  de reservas, Airbnb ha trasladado gran parte de su
+                  infraestructura de TI a la nube.
+                  <strong
+                    >El Cloud Computing ha permitido a Airbnb escalar su
+                    servicio para gestionar el gran volumen de tráfico que
+                    recibe</strong
+                  >, mientras que al mismo tiempo ha mejorado la eficiencia y ha
+                  reducido los costes operativos.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button fw-bold collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  Walmart
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Walmart ha trasladado gran parte de su infraestructura
+                  informática a servidores alojados en Cloud.
+                  <strong
+                    >La nube ha permitido a Walmart mejorar la eficiencia en
+                    toda la organización</strong
+                  >, desde la logística y la gestión de inventarios hasta el
+                  análisis de datos y la toma de decisiones. Además, la nube ha
+                  mejorado la escalabilidad y la ciberseguridad de la
+                  infraestructura informática.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- TEXTO 2 -->
+          <div class="row mt-3">
+            <p class="h5 px-0">
+              En resumen, estos ejemplos de empresas que han adoptado soluciones
+              de Cloud Computing muestran cómo la tecnología puede mejorar la
+              eficiencia, la seguridad y la escalabilidad de las operaciones
+              empresariales. <br />
+              <br />
+              A medida que más organizaciones comienzan a adoptar soluciones en
+              la nube, surgen una serie de ejemplos de empresas que han visto
+              los beneficios de la nube en términos de eficiencia, seguridad y
+              escalabilidad. <br />
+              <br />
+              Al utilizar la nube, estas empresas han podido gestionar grandes
+              cantidades de datos y tráfico en línea de manera más eficiente y
+              rentable. También han mejorado la seguridad y la adaptabilidad de
+              sus sistemas, lo que ha reducido el riesgo de interrupciones del
+              servicio y vulnerabilidades de seguridad.
+            </p>
+          </div>
+          <marquee
+            class="mt-3"
+            behavior="alternate"
+            direction=""
+            scrolldelay="5"
+            loop="10"
+          >
+            <img
+              src="../img/casos-de-uso-netflix.png"
+              alt="Netflix"
+              style="margin-right: 100px"
+            />
+            <img
+              src="../img/casos-de-uso-coca-cola.png"
+              alt="Netflix"
+              style="margin-right: 100px"
+            />
+            <img
+              src="../img/casos-de-uso-axa.png"
+              alt="Netflix"
+              style="margin-right: 100px"
+            />
+            <img
+              src="../img/casos-de-uso-airbnb.png"
+              alt="Netflix"
+              style="margin-right: 100px"
+            />
+            <img
+              src="../img/casos-de-uso-walmart.png"
+              alt="Netflix"
+              style="margin-right: 100px"
+            />
+          </marquee>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="d-flex flex-column align-items-center">
+      <div class="container text-center px-0 py-5 mx-0">
+        <div class="col">
+          <div class="footer-container row">
+            <!-- INFORMACION -->
+            <div class="col row-sm d-flex flex-column gap-3 align-items-center">
+              <a class="navbar-brand" href="index.html">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="60"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M11 18.004h-4.343c-2.572 -.004 -4.657 -2.011 -4.657 -4.487c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99a3.468 3.468 0 0 1 3.307 2.444"
+                  />
+                  <path d="M20 21l2 -2l-2 -2" />
+                  <path d="M17 17l-2 2l2 2" />
+                </svg>
+              </a>
+              <p class="mb-0">+51 937 094 291</p>
+              <p class="mb-0">contacto@cloudcomputing.com</p>
+              <p class="mb-0">Av. Cuba 152</p>
+              <p class="mb-0">Jesús María, Lima, Perú</p>
+            </div>
+
+            <hr class="footer-linea border-2 border-dark mt-3" />
+
+            <!-- ENLACES -->
+            <div class="col row-sm d-flex flex-column justify-content-between">
+              <a
+                class="text-dark fw-bold link-warning text-decoration-none"
+                href="tecnologias.html#main-tecnologias"
+                >Tecnologías</a
+              >
+              <a
+                class="text-dark fw-bold link-warning text-decoration-none"
+                href="servicios.html#main-servicios"
+                >Servicios</a
+              >
+              <a
+                class="text-dark fw-bold link-warning text-decoration-none"
+                href="casos-de-uso.html#main-casos-de-uso"
+                >Casos de uso</a
+              >
+              <a
+                class="text-dark fw-bold link-warning text-decoration-none"
+                href="seguridad.html"
+                >Seguridad</a
+              >
+              <a
+                class="text-dark fw-bold link-warning text-decoration-none"
+                href="contacto.html#main-contacto"
+                >Contacto</a
+              >
+            </div>
+
+            <hr class="footer-linea border-2 border-dark mt-3" />
+
+            <!-- SUSCRIPCION -->
+            <div class="col row-sm d-flex flex-column">
+              <p class="fw-bold mb-3">Suscribirse</p>
+              <form>
+                <div class="form-group mb-3">
+                  <label class="fw-bold" for="email">Email:</label>
+                  <input
+                    type="email"
+                    class="form-control text-center"
+                    id="email"
+                    aria-describedby="emailHelp"
+                    placeholder="Ingresa tu correo"
+                  />
+                </div>
+                <button type="submit" class="btn fw-bold btn-dark">
+                  Enviar
+                </button>
+              </form>
+            </div>
+
+            <hr class="footer-linea border-2 border-dark mt-3" />
+
+            <!-- REDES SOCIALES -->
+            <div class="col row-sm d-flex flex-column">
+              <p class="fw-bold">Síguenos</p>
+              <div class="row rrss">
+                <a
+                  class="col col-sm"
+                  href="https://www.facebook.com/?locale=es_LA"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#131517"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    width="28"
+                    height="28"
+                    stroke-width="1.75"
+                  >
+                    <path
+                      d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                    ></path>
+                  </svg>
+                </a>
+                <a class="col col-sm" href="https://www.instagram.com/">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#131517"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    width="28"
+                    height="28"
+                    stroke-width="1.75"
+                  >
+                    <path
+                      d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+                    ></path>
+                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                    <path d="M16.5 7.5l0 .01"></path>
+                  </svg>
+                </a>
+                <a class="col" href="https://twitter.com/">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-x"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.75"
+                    stroke="#131517"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copy container text-center m-0 px-0 py-4 mw-100">
+        <p class="text-white mb-0">
+          Creado por: <br />
+          Luis Trujillo & Marcos Gamero <br />
+          © Derechos reservados 2024
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
