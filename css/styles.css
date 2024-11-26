@@ -98,11 +98,43 @@ header {
   }
 }
 
-.main-tecno-btn:hover {
+.main-tecno-btn {
   border: none;
+  background-color: var(--blanco);
+  transition: background-color 0.5s ease; /* Estandar */
+  -webkit-transition: background-color 0.5s ease; /* Safari y Chrome antiguos */
+  -moz-transition: background-color 0.5s ease; /* Firefox antiguo */
+  -o-transition: background-color 0.5s ease; /* Opera antiguo */
+}
+
+.main-tecno-btn:hover {
   background-color: var(--amarillo);
 }
 
+.btn-servicios {
+  border: none;
+  background-color: var(--oscuro);
+  transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease; /* Safari y Chrome antiguos */
+  -moz-transition: background-color 0.5s ease; /* Firefox antiguo */
+  -o-transition: background-color 0.5s ease; /* Opera antiguo */
+}
+
+.btn-servicios:hover {
+  background-color: var(--amarillo);
+}
+
+.contacto-input {
+  background-color: var(--blanco);
+  transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease; /* Safari y Chrome antiguos */
+  -moz-transition: background-color 0.5s ease; /* Firefox antiguo */
+  -o-transition: background-color 0.5s ease; /* Opera antiguo */
+}
+
+.contacto-input:hover {
+  background-color: var(--verdesuave);
+}
 /* MAIN */
 
 /* FOOTER */
